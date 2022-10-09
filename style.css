@@ -1,0 +1,406 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+   margin: 0;
+  font-family: "Exo", Sans-serif;font-family: -apple-system, 
+  BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", 
+  Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+  "Segoe UI Symbol", "Noto Color Emoji";
+ /* -webkit-font-smoothing: antialiased;*/
+}
+
+.navbar{
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  background-color: yellow;
+  top: 0;
+  }
+
+.main{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:100%;
+  grid-template-rows:90px ;
+  column-gap: 1px;
+  row-gap: 1px;
+  overflow: hidden;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+/*.box {
+  color: white;
+  background-color: white;
+  display: grid;
+  height: 10vh;
+  width: 90vw;
+  place-items: center;
+ 
+}*/
+#box1{
+    width: 100%;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+/*.navbar{
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px 40px 20px 40px;
+    z-index: 99;
+}*/
+
+
+#box1 img{
+    width: 170px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+
+#box1 span{
+  width: 70px;
+  color:#f5622c;
+  float: right;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 1px;
+ font-size: 40px;
+ font-weight: 700; 
+ position: relative;
+
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(101deg, #12777c 35%, #f5622c 1%);
+  overflow-x: hidden;
+  text-decoration: none;
+}
+
+/*.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  }*/
+#mySidenav ul {
+  list-style-type: none;
+  left: 0;
+  padding: 0;
+  width: 490px;
+  background-color: #f1f1f1;
+}
+
+#mySidenav li{
+
+    text-decoration: none;
+
+}
+
+#mySidenav img{
+    width: 179px;
+    margin-left: -450px;
+    margin-top: 10px;
+    position: relative;
+}
+#mySidenav  h2{ 
+    margin-top: 150px;
+    width: 450px;
+    left: 0;
+    font-size: 50px;
+    font-family: Exo, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+#mySidenav p{ 
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 33px;
+    top: 0;
+    left: 0;
+    right: 15px;
+    width: 450px;
+    color: white;
+   /* --widgets-spacing: 0px;*/
+    display: block;
+   /* margin-block-start: 1em;*/
+    /*margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;*/    
+
+}
+#mySidenav a{
+  
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  
+}
+#mySidenav span{
+    margin-left: 40px;
+    margin-top: 200px;
+    font-family: Exo, sans-serif;
+    padding: 12px 24px;
+    font-size:24px;
+    font-weight: 600;
+    text-decoration: inherit;
+    fill: #02a6a6;
+    color: #02a6a6;
+    background-color: white;
+    width: 450px;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+
+#mySidenav1 a{
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  display: block;
+   float: right;
+     color: white;
+     background-color:#f5622c ;
+
+}
+#mySidenav1 ul {
+  list-style-type: none;
+  left: 0;
+  padding: 0;
+  width: 490px;
+  background-color: #f1f1f1;
+}
+
+#mySidenav1 li{
+
+    text-decoration: none;
+
+}
+
+#mySidenav1 img{
+    width: 179px;
+    margin-left: -450px;
+    margin-top: 10px;
+    position: relative;
+}
+#mySidenav1  h2{ 
+    margin-top: 150px;
+    width: 450px;
+    left: 0;
+    font-size: 50px;
+    font-family: Exo, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+#mySidenav1 p{ 
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 33px;
+    top: 0;
+    left: 0;
+    right: 15px;
+    width: 450px;
+    color: white;
+   /* --widgets-spacing: 0px;*/
+    display: block;
+   /* margin-block-start: 1em;*/
+    /*margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;*/    
+
+}
+#mySidenav1 a{
+  
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  
+}
+#mySidenav1 span{
+    margin-left: 40px;
+    margin-top: 200px;
+    font-family: Exo, sans-serif;
+    padding: 12px 24px;
+    font-size:24px;
+    font-weight: 600;
+    text-decoration: inherit;
+    fill: #02a6a6;
+    color: #02a6a6;
+    background-color: white;
+    width: 450px;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+
+
+
+
+/*.sidenav img{
+    position: absolute;
+    top: 0;
+    width: 170px;
+    float: left;
+    left: 0;
+    margin-left: 20px;
+  
+}
+.sidenav #leftbox h2{
+     font-family: "Exo", Sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+
+}
+#leftbox p{
+  color: white;
+  display: block;
+  font-family: "Exo", Sans-serif;
+  text-decoration: none;
+  position: relative;
+
+}
+
+
+ .sidenav h1{   
+   
+  padding: 5px 8px 8px 30px;
+  color: white;
+  display: block;
+  font-family: "Exo", Sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  text-decoration: none;
+  position: relative;
+  /*transition: 0.01s;*/
+}
+.sidenav a:hover {
+  color: white;
+  text-decoration:underline;
+}
+/*.sidenav .closebtn {
+  position: absolute;
+    top: 0;
+    right: 5px;
+    width: 70px;
+    height: 57px;
+    font-size: 70px;
+    font-weight: 700;
+}*/
+
+
+.closebtn {
+  /*position: absolute;*/
+  top: 0;
+  color: white;
+  right: 55px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.sidenav ul li{
+    float: right;
+    right: 0;
+    margin-right: 0;
+}
+
+
+/*ul li {
+  text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+}
+ul li p{
+    text-decoration: none;
+}
+*/
+
+
+
+@media screen and (max-height: 450px) 
+{
+  /*.sidenav {padding-top: 15px;}*/
+  /*.sidenav a {font-size: 20px;}*/
+}
+
+#box2{
+  grid-column: 1/2 span;
+  background-color: white;
+}
+
+#box3{
+    background-color: yellow;
+
+}
+#box4{
+    background-color: yellow;
+
+}
+#box5{
+    background-color: yellow;
+
+}
+#box6{
+    background-color: yellow;
+
+}
+#box7{
+    background-color: yellow;
+
+}
+#box8{
+    background-color: yellow;
+
+}
+#box9{
+    background-color: yellow;
+
+}
+#box10{
+  
+  background-color: yellow;
+
+}#box11{
+  
+  background-color: yellow;
+
+}
+#box12{
+  
+  background-color: yellow;
+
+}
+#box13{
+  
+  background-color: yellow;
+
+}
+#box14{
+   
+   background-color: yellow;
+
+}
+#box15{
+   grid-column: 1/2 span;
+  background-color: yellow;
+
+}
+
+
